@@ -1,4 +1,4 @@
-name: Deploy master
+name: django CD
 on:
   push:
     branches:
