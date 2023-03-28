@@ -87,6 +87,26 @@ DATABASES = {
     }
 }
 
+TEST = {
+    'SERIALIZE': False,
+    'DETAILED_ERRORS': True,
+    'MIRROR': None,
+    'NAME': ':memory:',
+    'CREATE_DB': None,
+    'CREATE_TABLES': None,
+    'ALLOWED_HOSTS': [],
+    'PRESERVE_TEST_DATABASE': False,
+    'DEPENDENCIES': [],
+    'REVERSE_DEPENDENCIES': {},
+    'MIGRATE': True,
+    'MIGRATION_MODULES': {},
+    'FIXTURE_DIRS': [],
+    'OPTIONS': {
+        'timeout': 30,
+        'deterministic': False,  # 이 부분을 False로 변경합니다.
+    },
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
